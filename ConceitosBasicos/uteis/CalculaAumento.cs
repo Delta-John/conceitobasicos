@@ -8,6 +8,11 @@ namespace ConceitosBasicos.uteis
 {
     public class CalculaAumento
     {
+        public static object Aumento()
+        {
+            throw new NotImplementedException();
+        }
+
         public decimal Calcular(decimal salario, float percentual)
         {
             return salario * ((decimal)percentual / 100);
