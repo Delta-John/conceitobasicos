@@ -16,15 +16,15 @@ namespace TestConceitosBasicos
     {
         //cenário
         decimal salario = 1000;
-        float percentual = 50;
-        decimal resultado;
+        float percentualAumento = 10;
+        decimal valorAumento;
         CalculaAumento calculaAumento = new CalculaAumento();
 
         //ação
-        resultado = calculaAumento.Calcular(salario, percentual);
+        valorAumento = calculaAumento.Calcular(salario, percentualAumento);
 
          //verificação
-         Assert.AreEqual(5400, resultado);
+         Assert.AreEqual(100,valorAumento);
          
         }
     }
